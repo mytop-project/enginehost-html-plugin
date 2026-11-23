@@ -31,7 +31,7 @@ public final class HtmlGamePlugin implements EnginePlugin {
         game = GameWebView.open(session, TAG, SITE);
         // The page has the keyboard from the start: Android hands a keyboard's keys to the
         // focused view, and with none focused a story ignored Enter until it was tapped
-        // (Enginehost's emulator conformance run, Droidtop/tracker#27).
+        // (Enginehost's emulator conformance run, mytop-project/tracker#27).
         WebView view = game.view();
         view.setFocusableInTouchMode(true);
         view.requestFocus();

@@ -13,7 +13,7 @@ release of its own (`<bundle>-build.<run>`), which is never overwritten.
 - The Twine core is back as its own line, `plugin/twine-2.12` (bundle `dev.enginehost.twine.2_12.v1`,
   Twine 1.1.0), with its own wrapper, TwinePlugin. The 2026-10-14 restructure into lines dropped it
   as "on no line", which left Twine stories only on the HTML core. The owner: every engine keeps its
-  own core (Droidtop/tracker#28, 2026-11-04). The HTML core is unchanged.
+  own core (mytop-project/tracker#28, 2026-11-04). The HTML core is unchanged.
 
 ## [1.0.7]
 
@@ -21,7 +21,7 @@ release of its own (`<bundle>-build.<run>`), which is never overwritten.
 - HTML and Twine games always run locked down: files only through Enginehost's broker, no
   sockets, no exec. The page itself runs in WebView's own renderer, which Android isolates
   (`isolated_app`). It passed the rig on the AVD with a Play Store WebView and TrichromeLibrary
-  (Droidtop/tracker#550), on Enginehost from ef4428d. The "Run unsandboxed?" sheet no longer
+  (mytop-project/tracker#550), on Enginehost from ef4428d. The "Run unsandboxed?" sheet no longer
   appears for this core.
 
 ### Added
